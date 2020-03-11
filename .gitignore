@@ -3,6 +3,7 @@
 .venv
 new
 venv
+.env
 
 # Ignore files
 *.csv

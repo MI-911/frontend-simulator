@@ -9,7 +9,7 @@ import pandas as pd
 
 def calculate_probabilities(input_path, output_path, entity_file, ratings_file):
     # Load data
-    entities_df = pd.read_csv(input_path + entity_file, index_col=0)
+    entities_df = pd.read_csv(input_path + entity_file)
 
     ratings = pd.read_csv(input_path + ratings_file, index_col=0)
     ratings = ratings.loc[:, ~ratings.columns.str.contains('^Unnamed')]
